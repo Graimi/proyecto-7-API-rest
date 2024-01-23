@@ -10,6 +10,7 @@ mongoose.set('strictPopulate', false);
 
 mongoose
   .connect(`mongodb://127.0.0.1:${MONGO_PORT}/${MONGO_DB}`)
+  // .connect(`mongodb://localhost:${MONGO_PORT}/${MONGO_DB}`)
   .then(() => {
     console.log('>> Conectado a la BBDD!');
   })
